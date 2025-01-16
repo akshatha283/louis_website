@@ -1,8 +1,32 @@
 .carousel-item-image{
     // height: 450px;
+    opacity: 0.7;
+    height: 750px;position: absolute;  opacity: 0.5;top: 0; left: 0; width: 100%;
 }
 
-.carousel-next-button{
+.carousel-button{
     background-color: white;
      border-radius: 50%;
+}
+
+.carousel-item{
+    background-color: #C69966;
+}
+
+.title{
+    font-family: DejaVu Sans;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 90px;
+}
+
+.tagline{
+    font-family: DejaVu Sans;
+    font-style: italic;
+    // margin-top: -30px;
+    // font-size: 40px;
+}
+
+.title-content{
+    position: relative;
 }
