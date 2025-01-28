@@ -1,32 +1,159 @@
-.carousel-item-image{
-    // height: 450px;
-    opacity: 0.7;
-    height: 750px;position: absolute;  opacity: 0.5;top: 0; left: 0; width: 100%;
+.carousel-item-image {
+  // height: 450px;
+  opacity: 0.7;
+  height: 750px;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.carousel-button{
-    background-color: white;
-     border-radius: 50%;
+.carousel-button {
+  background-color: white;
+  border-radius: 50%;
 }
 
-.carousel-item{
-    background-color: #C69966;
+.form{
+    border: none;
+    background-color:  rgb(255, 255, 255,0.5) ;
+    color:#fdd500 ;
+    // font-weight: 700;
+    margin: 10px 5px;
+    padding: 5px 10px;
 }
 
-.title{
-    font-family: DejaVu Sans;
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 90px;
+
+
+.bag-outer-bubble {
+  position: absolute;
+  z-index: 1;
+  left: 47%;
+  top: 2%;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  background-color: #7bcbca;
 }
 
-.tagline{
-    font-family: DejaVu Sans;
-    font-style: italic;
-    // margin-top: -30px;
-    // font-size: 40px;
+.bag-inner-bubble {
+  position: absolute;
+  z-index: 1;
+  left: 4%;
+  top: 4%;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  background-color: #fdd500;
 }
 
-.title-content{
-    position: relative;
+.bottle-bubble {
+  position: absolute;
+  z-index: 1;
+  left: 47%;
+  top: 65%;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  background-color: #7bcbca;
+}
+
+.tech-bubble {
+    position: absolute;
+    z-index: 1;
+    left: 32%;
+    top: 78%;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    background-color: #7bcbca;
+
+  }
+
+  .tech-inner-bubble {
+    position: absolute;
+    z-index: 1;
+    left: 3%;
+    top: 3%;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background-color: #fdd500;
+    // background-color: #99c199;
+  }
+  
+
+.hoodie-bubble {
+  position: absolute;
+  z-index: 1;
+  left: 2%;
+  top: 60%;
+}
+
+.card{
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 50%/30%;
+    height: 350px;
+    width: 220px;
+    position: absolute;
+    z-index: 1;
+    left: 60%;
+    border: none;
+    top: 20%;
+    // box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+@media only screen and (max-width: 300px) {
+    .card {
+      display: none;
+    }
+  }
+
+
+.card-image-one{
+   height: 24vh;
+   width: 24vh;
+}
+
+
+
+.carousel-item {
+  background-color: #7bcbca;
+  // background-color: #f4c2c2;
+}
+
+.title {
+  font-family: DejaVu Sans;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 90px;
+  color: white;
+}
+
+.tagline {
+  font-family: DejaVu Sans;
+  font-style: italic;
+  color: white;
+  // margin-top: -30px;
+  // font-size: 40px;
+}
+
+.title-content {
+  position: relative;
+}
+
+.button {
+  background-color: rgb(255, 255, 255,0.5);
+  color: black;
+  font-weight: 800; font-size: 22px;
+  border: none;
+  
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
 }

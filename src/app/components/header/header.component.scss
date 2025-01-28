@@ -9,3 +9,12 @@
     font-style: italic;
     padding-left: 5px ;
 }
+
+.navbar {
+    display: flex;
+    align-items: center;
+  }
+
+.navbar-nav .mx-auto{
+    justify-content: center;
+}
