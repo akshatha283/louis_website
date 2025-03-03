@@ -33,7 +33,7 @@
   border-radius: 50%;
   height: 140px;
   width: 140px;
-  background-color: #7bcbca;
+  background-color: #01b4ba;
 }
 
 .bag-inner-bubble {
@@ -50,27 +50,27 @@
 .bottle-bubble {
   position: absolute;
   z-index: 1;
-  left: 47%;
-  top: 65%;
+  left: 45%;
+  top: 62%;
   border-radius: 50%;
   height: 140px;
   width: 140px;
-  background-color: #7bcbca;
+  background-color: #01b4ba;
 }
 
-.tech-bubble {
+.bottom-bubble {
     position: absolute;
     z-index: 1;
-    left: 32%;
-    top: 78%;
+    left: 33%;
+    top: 75%;
     border-radius: 50%;
     height: 170px;
     width: 170px;
-    background-color: #7bcbca;
+    background-color: #01b4ba;
 
   }
 
-  .tech-inner-bubble {
+  .bottom-inner-bubble {
     position: absolute;
     z-index: 1;
     left: 3%;
@@ -118,7 +118,7 @@
 
 
 .carousel-item {
-  background-color: #7bcbca;
+  background-color: #01b4ba;
   // background-color: #f4c2c2;
 }
 

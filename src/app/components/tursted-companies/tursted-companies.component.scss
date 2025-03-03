@@ -1,0 +1,105 @@
+.title{
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.wrapper{
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes scrollLeft{
+  to{
+    left: -70px;
+  }
+}
+
+.img{
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  left: 100%;
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.img1{
+ animation-delay: calc(30s/8 * (8 - 1) * -1);
+}
+
+.img2{
+  animation-delay: calc(30s/8 * (8 - 2) * -1);
+ }
+
+ .img3{
+  animation-delay: calc(30s/8 * (8 - 3) * -1);
+ }
+
+ .img4{
+  animation-delay: calc(30s/8 * (8 - 4) * -1);
+ }
+
+ .img5{
+  animation-delay: calc(30s/8 * (8 - 5) * -1);
+ }
+
+ .img6{
+  animation-delay: calc(30s/8 * (8 - 6) * -1);
+ }
+ .img7{
+  animation-delay: calc(30s/8 * (8 - 7) * -1);
+ }
+ .img8{
+  animation-delay: calc(30s/8 * (8 - 8) * -1);
+ }
+// .wrapper{
+//     display: flex;
+//     justify-content: space-around;
+//     height: 20vh;
+//     padding: 1%;
+// }
+
+// .wrapper ul{
+//     height: 75px;
+//     overflow: hidden;
+// }
+
+// ul li{
+//     list-style: none;
+//     animation: fadeIn 3s;
+//     position: relative;
+//     top: 0;
+//     animation: slide 6s steps(2) infinite;
+// }
+// @keyframes slide {
+//   100%{
+//     top: -360px;
+//   }
+// }
+
+
+// li img{
+//     height: 70px;
+//     // width: 60px;
+// }
+
+// .image-container {
+//     // width: 400px;
+//     height: 200px;
+//     overflow: hidden;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+  
+//   .animated-image {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
