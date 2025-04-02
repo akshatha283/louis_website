@@ -1,6 +1,7 @@
 .section-bg{
-    background-color: #3498db;
     
+    background: linear-gradient(to bottom, #ac64b1dc 70%, #ffffff 30%);
+    height: 50%;
     --mask:
     radial-gradient(57.63px at 50% 81px,#000 99%,#0000 101%) calc(50% - 90px) 0/180px 100%,
     radial-gradient(57.63px at 50% -36px,#0000 99%,#000 101%) 50% 45px/180px 100% repeat-x;
@@ -9,5 +10,45 @@
   }
 
   .section-header{
-    
+    padding-top: 80px;
+    color: #ffffff;
   }
+
+
+  .member-img{
+    // padding: 18px 0;
+    height: 225px;
+  width: 23vh;
+  // object-fit: cover;
+  // height: 100%;
+  // width: 100%;
+
+
+  display: flex;
+ 
+
+  }
+
+
+  .img-fluid{
+    // max-width: 30vh; 
+    align-self: center;
+  }
+
+  .member-info{
+    font-size: medium;
+    text-align: center;
+    height: 100%;
+  }
+
+.title{
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.description{
+  font-size: 12px;
+}
+
+
+ 

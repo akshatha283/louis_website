@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+# Why Us Section
+--------------------------------------------------------------*/
+.title{
+  font-size: 80px;
+
+}
+.why-us .why-box {
+    padding: 30px;
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
+  .why-us .why-box h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  
+  .why-us .why-box p {
+    margin-bottom: 30px;
+  }
+  
+  .why-us .why-box .more-btn {
+    display: inline-block;
+    // background: rgba(255, 255, 255, 0.3);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .why-us .why-box .more-btn i {
+    font-size: 14px;
+  }
+  
+  .why-us .why-box .more-btn:hover {
+    color: var(--color-primary);
+    background: #fff;
+  }
+  
+  .why-us .icon-box {
+    // box-shadow: rgb(50, 50, 255) 0px 0px 1px 1px;
+    text-align: center;
+    // background: #01b4ba;
+    padding: 40px 30px;
+    width: 100%;
+    height: 100%;
+    // border-radius: 25%;
+    border: 1px solid rgba(55, 55, 63, 0.1);
+    transition: 0.3s;
+  }
+  .why-us .icon-box.rOne{
+    // box-shadow: rgb(50, 50, 255) 0px 0px 1px 1px;
+    background: #fe6d0a;
+    color: #fff;
+  }
+
+  .why-us .icon-box.r2{
+  // box-shadow: rgb(50, 50, 255) 0px 0px 1px 1px;
+    background: #f2c20a;
+    color: #fff;
+    // opacity: 0.7;
+  }
+
+  .why-us .icon-box.r3{
+    // box-shadow: rgb(50, 50, 255) 0px 0px 1px 1px;
+    background: #248f4f;
+    color: #fff;
+  }
+
+  .why-us .icon-box.r4{
+    // box-shadow: rgb(50, 50, 255) 0px 0px 1px 1px;
+    background: #01b4ba;
+    color: #fff;
+    
+  }
+
+
+
+  
+  .why-us .icon-box i {
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 30px;
+    background: rgba(206, 18, 18, 0.1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .why-us .icon-box h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    font-family: var(--font-secondary);
+  }
+  
+  .why-us .icon-box p {
+    font-size: 15px;
+    // color: #6c757d;
+  }
+  
+  @media (min-width: 1200px) {
+    .why-us .icon-box:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .distribution-background{
+    width: 55%;
+    
+  }
