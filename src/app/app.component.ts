@@ -4,12 +4,13 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { TurstedCompaniesComponent } from './components/tursted-companies/tursted-companies.component';
 import { OurProcessComponent } from './components/our-process/our-process.component';
 import { WhyUsComponent } from './components/why-us/why-us.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent,CarouselComponent, TurstedCompaniesComponent, OurProcessComponent, WhyUsComponent],
+  imports: [HeaderComponent,RouterOutlet,CarouselComponent, TurstedCompaniesComponent, OurProcessComponent, WhyUsComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

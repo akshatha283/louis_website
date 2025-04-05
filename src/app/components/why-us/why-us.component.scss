@@ -5,6 +5,21 @@
   font-size: 80px;
 
 }
+
+#global-distribution {
+  // color: violet;
+  background: linear-gradient(135deg, #4b0082, #80d0ff); /* Light violet to light blue */
+  background: linear-gradient(135deg, violet, #80d0ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.global-distribution-desc{
+ font-size: 18px;
+}
+
 .why-us .why-box {
     padding: 30px;
     background: var(--color-primary);
