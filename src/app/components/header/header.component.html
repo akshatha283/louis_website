@@ -1,6 +1,15 @@
-<nav class="navbar  bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+<div class="position-relative">
+  <nav
+    class="navbar bg-dark navbar-expand-lg bg-body-tertiary"
+    data-bs-theme="dark"
+  >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">  <div class="title d-flex"> <img class="logo" src="\main_logo.png"> <div style="padding-left: 10px ;">LOUIS corporate gifting</div>   </div> </a>
+      <a class="navbar-brand" href="#">
+        <div class="title d-flex">
+          <img class="logo" src="\main_logo.png" />
+          <div style="padding-left: 10px">LOUIS</div>
+        </div>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -14,19 +23,265 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
         <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
 
         <ul class="navbar-nav mx-auto my-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Products</a>
+          <li
+            class="nav-item"
+            (mouseenter)="showSubNavApparel = true"
+            (mouseleave)="showSubNavApparel = false"
+          >
+            <a class="nav-link" aria-current="page" href="#">Apparel</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+          <div
+            *ngIf="showSubNavApparel"
+            class="sub-navbar justify-content-center text-white px-4 py-2"
+          >
+            <ul class="d-flex justify-content-around list-unstyled">
+              <li><a class="me-4 text-white text-decoration-none" href="#"
+                >T-Shirts</a
+              ></li>
+              <li><a class="me-4 text-white text-decoration-none" href="#"
+                >Hoodies</a
+              ></li>
+              <li><a class="me-4 text-white text-decoration-none" href="#"
+                >Jackets</a
+              ></li>
+              <li><a class="me-4 text-white text-decoration-none" href="#"
+                >Sweatshirts</a
+              ></li>
+              <li><a class="me-4 text-white text-decoration-none" href="#"
+                >Caps & Hats</a
+              ></li>
+              <li><a class="me-4 text-white text-decoration-none" href="#"
+                >Footwear</a
+              ></li>
+              <li><a class="me-4 text-white text-decoration-none" href="#"
+                >Activewear</a
+              ></li>
+              
+              
+              
+              
+              
+              
+              
+            </ul>
+            <div class="row align-items-center">
+              <div class="offset-md-1  col-md-2">
+                <div class="row">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\tshirt.png" alt="">
+                </div>  
+              </div>
+              <div class="col-md-2">
+                <div class="row my-4">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\club-tshirt-apparel.png" alt="">
+
+                </div>
+                <div class="row my-4">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\hats&cap.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="row my-4">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\jacket-apparel.png" alt="">
+                </div>
+                <div class="row my-4">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\hoodie-apparel-simple.png" alt="">
+                </div>
+                <div class="row my-4">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\sweatshirt-apparel.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="row my-4">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\jersey-apparel.png" alt="">
+                </div>
+                <div class="row my-4">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\shoes-apparel-cropped.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="row">
+                  <img class="img-fluid w-100 h-100 object-fit-cover" style="border-radius: 15% ;" src="\polo.png" alt="">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <li
+            class="nav-item"
+            (mouseenter)="showSubNavOffice = true"
+            (mouseleave)="showSubNavOffice = false"
+          >
+            <a class="nav-link" aria-current="page" href="#">Office</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/hampers"  >Hampers</a>
+          <div
+            *ngIf="showSubNavOffice"
+            class="sub-navbar  text-white px-4 py-2"
+          >
+          <ul>
+
+          </ul>
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Headphones</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Speakers</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Bluetooth</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Sweatshirts</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Footwear</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Activewear</a
+            >
+          </div>
+
+          <li
+            class="nav-item"
+            (mouseenter)="showSubNavTech = true"
+            (mouseleave)="showSubNavTech = false"
+          >
+            <a class="nav-link" aria-current="page" href="#">Tech</a>
           </li>
+          <div *ngIf="showSubNavTech" class="sub-navbar text-white px-4 py-2">
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Headphones</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Speakers</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Bluetooth</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Sweatshirts</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Footwear</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Activewear</a
+            >
+          </div>
+
+          <li
+            class="nav-item"
+            (mouseenter)="showSubNavBags = true"
+            (mouseleave)="showSubNavBags = false"
+          >
+            <a class="nav-link" aria-current="page" href="#">Bags</a>
+          </li>
+          <div *ngIf="showSubNavBags" class="sub-navbar text-white px-4 py-2">
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Backpacks</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Travel Bags</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Tote Bags</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Pouches & Sling Bags</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Drawstring Bags</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Duffel Bags</a
+            >
+          </div>
+
+          <li
+            class="nav-item"
+            (mouseenter)="showSubNavDrinkware = true"
+            (mouseleave)="showSubNavDrinkware = false"
+          >
+            <a class="nav-link" aria-current="page" href="#">Drinkware</a>
+          </li>
+          <div *ngIf="showSubNavDrinkware" class="sub-navbar text-white px-4 py-2">
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Headphones</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Speakers</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Bluetooth</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Sweatshirts</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Footwear</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Activewear</a
+            >
+          </div>
+          <li
+            class="nav-item"
+            (mouseenter)="showSubNavWellness = true"
+            (mouseleave)="showSubNavWellness = false"
+          >
+            <a class="nav-link" aria-current="page" href="#">Wellness</a>
+          </li>
+          <div *ngIf="showSubNavWellness" class="sub-navbar text-white px-4 py-2">
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Fitness & Recreation</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Camping & Outdoors</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Health Care</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Massaging Chairs</a
+            >
+            <a class="me-4 text-white text-decoration-none" href="#"
+              >Self Care</a
+            >
+          </div>
+          <div
+            (mouseenter)="showSubNavGallery = true"
+            (mouseleave)="showSubNavGallery = false"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+
+            <div
+              *ngIf="showSubNavGallery"
+              class="sub-navbar text-white px-4 py-2 justify-content-center"
+            >
+              <div class="me-4 row text-white text-decoration-none" href="#">
+                hoodies
+              </div>
+              <div
+                class="galleryContent me-4 row text-white text-decoration-none"
+                href="#"
+              >
+                Gallery 2
+              </div>
+              <a class="row me-4 text-white text-decoration-none" href="#"
+                >Gallery 3</a
+              >
+            </div>
+          </div>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/hampers">Hampers</a>
+          </li>
+          <!-- Dropdown -->
           <!-- <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -46,32 +301,62 @@
               </li>
             </ul>
           </li> -->
+          <!-- End of Dropdown -->
+          <li>
+            <!-- search bar -->
+            <!-- <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Anything else in mind?"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form> -->
+            <!-- End of search bar -->
+          </li>
         </ul>
-        <ul class="navbar-nav ms-auto mb-2  mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " href=""> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-              </svg> </a>
+            <a class="nav-link" href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-whatsapp"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                />
+              </svg>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " target="_blank" href="https://www.instagram.com/louis_corporate_gifts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-              </svg> </a>
+            <a
+              class="nav-link"
+              target="_blank"
+              href="https://www.instagram.com/louis_corporate_gifts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                />
+              </svg>
+            </a>
           </li>
-          
         </ul>
-
-        <!-- <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form> -->
       </div>
     </div>
   </nav>
+</div>

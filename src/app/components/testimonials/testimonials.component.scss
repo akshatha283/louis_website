@@ -1,0 +1,61 @@
+  .title{
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    left: 35vw;
+  }
+  .sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Great Vibes', cursive;
+    color: #ffffff;
+    position: absolute;
+    position: absolute;
+    left: 45vw;
+    top: 4vh;
+  }
+  .bi{
+    font-size: 50px;
+    z-index: 1;
+    // top: 5px;
+  }
+  
+  .card-outline-wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 6px; /* space between card and outline */
+    background: transparent;
+  }
+  
+  .card-outline-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // border: 5px solid #ffa500; /* your custom border color */
+    border: 5px solid #000000;
+    border-radius: 8px; /* match the card's border-radius */
+    transform: translate(4px, 2px); /* move the border to look offset */
+    transform: rotate(-5deg);
+    z-index: 1;
+  }
+  
+  .custom-card {
+    position: relative;
+    border-radius: 8px;
+    z-index: 0;
+  }
+  
+  .card-text{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .card-regards{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+  }

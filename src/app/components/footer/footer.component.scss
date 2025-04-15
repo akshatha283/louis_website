@@ -5,8 +5,12 @@
 
 .container{
 
-    color: black;
+    // color: black;
     
+}
+.footer-content{
+    color: white;
+    text-align: center;
 }
 
 .bi-telephone-fill{
@@ -15,8 +19,14 @@
 }
 
 i{
-  color: aqua;
-  font-size: 60px;  
+  color: white;
+  padding: 0 5px;
+//   font-size: 60px;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .row-icons{

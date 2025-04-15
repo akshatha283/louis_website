@@ -96,20 +96,20 @@
         </div>
         <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
           <div class="col-md-3 col-sm-6">
-            <button class="button" style="color: #fdd500;font-weight: 800; font-size: 22px;"> Explore </button>
+            <button class="button" style="color: #ffffff;font-weight: 800; font-size: 22px;"> Explore </button>
           </div>
         </div>
         <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
           <div class="col-md-5 col-sm-6">
-            <form   (ngSubmit)="sendEmail()" #contactForm="">
-              <input class="form" type="text" name="name"  placeholder="Name" required />
-              <input class="form" type="email" name="email" placeholder="Email" required />
-              <input class="form "  type="text" name="price"  placeholder="Price range" required />
-              <input class="form "  type="text" name="quantity"  placeholder="Quantity" required />
-              <textarea class="form col-md-12 col-sm-12" name="message"  placeholder="What are you looking for?" required></textarea>
-              <input class="form " type="checkbox" id="subscribeOptions">
+            <form   (ngSubmit)="sendEmail()" #contactForm="ngForm">
+              <input [(ngModel)]="formData.name" class="form" type="text" name="name"  placeholder="Name" required />
+              <input [(ngModel)]="formData.email" class="form" type="email" name="email" placeholder="Email" required />
+              <input [(ngModel)]="formData.priceRange" class="form "  type="text" name="price"  placeholder="Price range" required />
+              <input [(ngModel)]="formData.quantity" class="form "  type="text" name="quantity"  placeholder="Quantity" required />
+              <textarea [(ngModel)]="formData.message" class="form col-md-12 col-sm-12" name="message"  placeholder="What are you looking for?" required></textarea>
+              <input [(ngModel)]="formData.options" class="form " type="checkbox" id="subscribeOptions">
               <label class="form " for="subscribeOptions"> Send me options in my price range</label> <br>
-              <button class="button" style="color: #fdd500;font-weight: 800; font-size: 22px;" type="submit">Submit</button>
+              <button class="button" style="color: #858282;font-weight: 800; font-size: 22px;" type="submit">Submit</button>
             </form>
           </div>
         </div>
@@ -214,8 +214,7 @@
       >
         <path
           d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
-        /></svg
-    ></span>
+        /></svg></span>
 
     <span class="visually-hidden">Previous</span>
   </button>
@@ -238,8 +237,7 @@
       >
         <path
           d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-        /></svg
-    ></span>
+        /></svg></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>

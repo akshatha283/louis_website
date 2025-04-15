@@ -18,3 +18,32 @@
 .navbar-nav .mx-auto{
     justify-content: center;
 }
+
+.nav-item.position-relative {
+    position: relative;
+  }
+  
+  .sub-navbar {
+    position: absolute;
+    top: 56px;
+    
+    left: 0;
+    width: 100vw; /* Full width */
+    background-color: #000000; /* Bootstrap secondary */
+    padding: 0.75rem 2rem;
+    z-index: 999;
+    // display: flex;
+    // justify-content: stretch;
+    gap: 1.5rem;
+    
+  }
+  
+  .sub-navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .galleryContent{
+    // padding-top: 56px;
+  }
