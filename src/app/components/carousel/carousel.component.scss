@@ -51,8 +51,8 @@
 .bottle-bubble {
   position: absolute;
   z-index: 1;
-  left: 45%;
-  top: 62%;
+  left: 48.5%;
+  top: 34%;
   border-radius: 50%;
   height: 140px;
   width: 140px;
@@ -62,8 +62,8 @@
 .bottom-bubble {
     position: absolute;
     z-index: 1;
-    left: 33%;
-    top: 75%;
+    left: 43%;
+    top: 72%;
     border-radius: 50%;
     height: 170px;
     width: 170px;
@@ -91,18 +91,48 @@
   top: 60%;
 }
 
+// .card{
+//     background-color: rgb(255, 255, 255, 0.5);
+//     border-radius: 50%/30%;
+//     height: 350px;
+//     width: 220px;
+//     // position: absolute;
+//     z-index: 1;
+//     left: 35%;
+//     border: none;
+//     // top: 20%;
+//     // box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
+// }
+
 .card{
-    background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.5);
     border-radius: 50%/30%;
-    height: 350px;
+        height: 350px;
     width: 220px;
-    position: absolute;
-    z-index: 1;
-    left: 60%;
     border: none;
-    top: 20%;
-    // box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
 }
+
+.card1{
+  left: 35%;
+}
+
+.card2{
+  left: 35%;
+}
+
+// .card2{
+//   background-color: rgb(255, 255, 255, 0.5);
+//   border-radius: 50%/30%;
+//   height: 350px;
+//   width: 220px;
+//   // position: absolute;
+//   z-index: 1;
+//   left: 35%;
+//   border: none;
+//   // top: 20%;
+//   // box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
+// }
 
 @media only screen and (max-width: 300px) {
     .card {
@@ -113,7 +143,7 @@
 
 .card-image-one{
    height: 24vh;
-   width: 24vh;
+   width: 22vw;
 }
 
 

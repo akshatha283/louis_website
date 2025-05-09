@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/533d0bec-5300-4f6d-ace7-b5160647759f/resourceGroups/test-angular-app/providers/Microsoft.Web/sites/louiscorporategifts",
+    "appService.deploySubpath": "dist\\louis-website"
+}

@@ -70,31 +70,53 @@
         left: 0;
         width: 100%;"></div>
         <div class="row pt-5 px-2 mt-1"  style="position: relative;" >
-          <div class="col-md-4 col-lg-3 col-sm-2 px-5 "><h1 class=" title">Louis</h1></div> 
+          <div class="col-md-4 col-lg-3 col-sm-2 px-5 "><h1 class=" title">Louis</h1>
 
+          </div>
           
         </div>
         <div class="row " style="position: relative;">
-          <div class="col-md-6 col-lg-7 col-sm-12 px-5 tagline">
+          <div class="col-md-6 col-lg-6 col-sm-12 px-5 tagline">
             <h2>The art of corporate gifting, <b> Redefined!</b></h2>
+            <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
+              <div class="col-md-3 col-sm-6">
+                <button class="button" style="color: #ffffff;font-weight: 800; font-size: 22px;"> Explore </button>
+              </div>
+            </div>
+            <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
+              <div class="col-md-12 col-sm-12">
+                <form   (ngSubmit)="sendEmail()" #contactForm="ngForm">
+                  <input [(ngModel)]="formData.name" class="form" type="text" name="name"  placeholder="Name" required />
+                  <input [(ngModel)]="formData.email" class="form" type="email" name="email" placeholder="Email" required />
+                  <input [(ngModel)]="formData.priceRange" class="form "  type="text" name="price"  placeholder="Price range" required />
+                  <input [(ngModel)]="formData.quantity" class="form "  type="text" name="quantity"  placeholder="Quantity" required />
+                  <textarea [(ngModel)]="formData.message" class="form col-md-12 col-sm-12" name="message"  placeholder="What are you looking for?" required></textarea>
+                  <input [(ngModel)]="formData.options" class="form " type="checkbox" id="subscribeOptions">
+                  <label class="form " for="subscribeOptions"> Send me options in my price range</label> <br>
+                  <button class="button" style="color: #858282;font-weight: 800; font-size: 22px;" type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="card d-none d-md-flex "  style="left: 55%; top: -2rem;" >
+          <div class="col-md-3"><div class="card card1 d-none d-md-flex "   >
             <img style="height: 180px; margin-top: 40px;" class=" " src="" alt=""> 
             <div style="text-align: center; color: #01b4ba; margin-top: 35px; line-height: 0.7;"> <h3>Tech</h3> 
               <!-- <p>1053 more options to choose and customize!</p> -->
             </div> 
-          </div>
-          <div class="card  d-none d-md-flex"  style="left: 77%;top: -2rem;">
+          </div></div>
+          <div class="col-md-3"><div class="card card2 d-none d-md-flex"  >
             <img style="height: 300px; margin-top: -20px; margin-right: -12px;" class=" " src="\mugs-removebg-preview.png" alt=""> 
             <div style="text-align: center; color: #fdd500; margin-top: -30px; line-height: 0.7;"> <h3>Drinkware</h3> 
               <!-- <p>Infinite shapes and colours to make your own!</p> -->
             </div> 
-          </div>
+          </div></div>
+          
+          
 
           
           
         </div>
-        <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
+        <!-- <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
           <div class="col-md-3 col-sm-6">
             <button class="button" style="color: #ffffff;font-weight: 800; font-size: 22px;"> Explore </button>
           </div>
@@ -112,7 +134,7 @@
               <button class="button" style="color: #858282;font-weight: 800; font-size: 22px;" type="submit">Submit</button>
             </form>
           </div>
-        </div>
+        </div> -->
       </div>
       
     </div>
