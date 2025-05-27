@@ -1,61 +1,168 @@
-  .title{
-    font-size: 50px;
-    font-weight: 600;
-    position: absolute;
-    left: 35vw;
-  }
-  .sub-title{
-    font-size: 40px;
-    font-weight: 600;
-    font-family: 'Great Vibes', cursive;
-    color: #ffffff;
-    position: absolute;
-    position: absolute;
-    left: 45vw;
-    top: 4vh;
-  }
-  .bi{
-    font-size: 50px;
-    z-index: 1;
-    // top: 5px;
-  }
+  // .title{
+  //   font-size: 50px;
+  //   font-weight: 600;
+  //   position: absolute;
+  //   left: 35vw;
+  // }
+  // .sub-title{
+  //   font-size: 40px;
+  //   font-weight: 600;
+  //   font-family: 'Great Vibes', cursive;
+  //   color: #ffffff;
+  //   position: absolute;
+  //   position: absolute;
+  //   left: 45vw;
+  //   top: 4vh;
+  // }
+  // .bi{
+  //   font-size: 50px;
+  //   z-index: 1;
+  //   // top: 5px;
+  // }
   
-  .card-outline-wrapper {
-    display: inline-block;
-    position: relative;
-    padding: 6px; /* space between card and outline */
-    background: transparent;
-  }
+  // .card-outline-wrapper {
+  //   display: inline-block;
+  //   position: relative;
+  //   padding: 6px; /* space between card and outline */
+  //   background: transparent;
+  // }
   
-  .card-outline-wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    // border: 5px solid #ffa500; /* your custom border color */
-    border: 5px solid #000000;
-    border-radius: 8px; /* match the card's border-radius */
-    transform: translate(4px, 2px); /* move the border to look offset */
-    transform: rotate(-5deg);
-    z-index: 1;
-  }
+  // .card-outline-wrapper::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   // border: 5px solid #ffa500; /* your custom border color */
+  //   border: 5px solid #000000;
+  //   border-radius: 8px; /* match the card's border-radius */
+  //   transform: translate(4px, 2px); /* move the border to look offset */
+  //   transform: rotate(-5deg);
+  //   z-index: 1;
+  // }
   
-  .custom-card {
-    position: relative;
-    border-radius: 8px;
-    z-index: 0;
-  }
+  // .custom-card {
+  //   position: relative;
+  //   border-radius: 8px;
+  //   z-index: 0;
+  // }
   
   .card-text{
     font-size: 16px;
     font-weight: 600;
   }
 
-  .card-regards{
-    font-size: 16px;
+  // .card-regards{
+  //   font-size: 16px;
+  //   font-weight: 600;
+  //   display: flex;
+  //   justify-content: end;
+  // }
+
+  .title {
+    font-size: 2.5rem;
     font-weight: 600;
-    display: flex;
-    justify-content: end;
   }
+  
+  .sub-title {
+    font-size: 2rem;
+    font-family: 'Great Vibes', cursive;
+  }
+
+  @media (max-width: 576px){
+    .title {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    
+  }
+  
+  // .quote-icon {
+  //   font-size: 2.5rem;
+  //   position: absolute;
+  //   top: -20px;
+  //   left: 10px;
+  //   z-index: 2;
+  // }
+  
+  // .card-outline-wrapper {
+  //   padding: 6px;
+  //   background: transparent;
+  //   position: relative;
+  
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     right: 0;
+  //     bottom: 0;
+  //     border: 3px solid #000;
+  //     border-radius: 8px;
+  //     transform: rotate(-5deg);
+  //     z-index: 0;
+  //   }
+  // }
+  
+  // .custom-card {
+  //   border-radius: 8px;
+  //   overflow: hidden;
+  //   position: relative;
+  //   z-index: 1;
+  
+  //   .card-body {
+  //     padding: 1rem;
+  //     background-color: #ffffffcc;
+  //     position: absolute;
+  //     bottom: 0;
+  //     width: 100%;
+  //   }
+  
+  //   .card-text {
+  //     font-size: 1rem;
+  //     font-weight: 500;
+  //   }
+  
+  //   .card-regards {
+  //     font-size: 0.9rem;
+  //     font-weight: 600;
+  //     text-align: end;
+  //   }
+  // }
+
+  .card-body{
+    background-image: '\paper.png';
+    background-size: cover;
+              background-position : center;
+  }
+  
+  .custom-card {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .card-regards {
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .carousel{
+    background-image: '\rainbow-bg.png';
+    background-color: linear-gradient(rgba(211, 209, 67, 0.5), rgba(75, 135, 179, 0.5));
+    background-size: cover;
+    background-position : center;
+  }
+  
+  .custom-card {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .card-body {
+    z-index: 2;
+  }
+  

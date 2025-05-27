@@ -65,10 +65,11 @@
 
 
       <div class="container  title-content" >
-        <div style="border-radius: 50%; background-color: #fdd500; height: 115vh; min-height: 350px; margin-left: -560px; margin-top: -250px;position: absolute;
+        <!-- <div style="border-radius: 50%; background-color: #fdd500; height: 115vh; min-height: 350px; margin-left: -560px; margin-top: -250px;position: absolute;
         top: 0;
         left: 0;
-        width: 100%;"></div>
+        width: 100%;"></div> -->
+        <div class="background-circle"></div>
         <div class="row pt-5 px-2 mt-1"  style="position: relative;" >
           <div class="col-md-4 col-lg-3 col-sm-2 px-5 "><h1 class=" title">Louis</h1>
 
@@ -78,13 +79,13 @@
         <div class="row " style="position: relative;">
           <div class="col-md-6 col-lg-6 col-sm-12 px-5 tagline">
             <h2>The art of corporate gifting, <b> Redefined!</b></h2>
-            <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
+            <!-- <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
               <div class="col-md-3 col-sm-6">
-                <button class="button" style="color: #ffffff;font-weight: 800; font-size: 22px;"> Explore </button>
+                <button class="button" style="font-weight: 800; font-size: 22px;"> Explore </button>
               </div>
-            </div>
+            </div> -->
             <div class="row pt-2 px-lg-4 px-md-5" style="position: relative; z-index: 1;">
-              <div class="col-md-12 col-sm-12">
+              <!-- <div class="col-md-12 col-sm-12">
                 <form   (ngSubmit)="sendEmail()" #contactForm="ngForm">
                   <input [(ngModel)]="formData.name" class="form" type="text" name="name"  placeholder="Name" required />
                   <input [(ngModel)]="formData.email" class="form" type="email" name="email" placeholder="Email" required />
@@ -95,17 +96,51 @@
                   <label class="form " for="subscribeOptions"> Send me options in my price range</label> <br>
                   <button class="button" style="color: #858282;font-weight: 800; font-size: 22px;" type="submit">Submit</button>
                 </form>
+              </div> -->
+              <div class="col-12 col-md-12 px-3 px-md-5">
+                <form (ngSubmit)="sendEmail()" #contactForm="ngForm" class="gift-form w-100">
+                  <input [(ngModel)]="formData.name" name="name" class="form-control mb-2" type="text" placeholder="Name" required />
+                  <input [(ngModel)]="formData.email" name="email" class="form-control mb-2" type="email" placeholder="Email" required />
+                  <input [(ngModel)]="formData.priceRange" name="price" class="form-control mb-2" type="text" placeholder="Price range" required />
+                  <input [(ngModel)]="formData.quantity" name="quantity" class="form-control mb-2" type="text" placeholder="Quantity" required />
+                  <textarea [(ngModel)]="formData.message" name="message" class="form-control mb-2" rows="1" placeholder="What are you looking for?" required></textarea>
+              
+                  <div class="form-check mb-2">
+                    <input [(ngModel)]="formData.options" name="options" class="form-check-input me-2 custom-checkbox" type="checkbox" id="subscribeOptions" />
+                    <label class="form-check-label" for="subscribeOptions">Send me options in my price range</label>
+                  </div>
+              
+                  <button class="btn btn-primary w-100" type="submit" (click)="submitForm()">Submit</button>
+                </form>
               </div>
+              
+              <!-- <div class="col-md-12 col-sm-12 px-3 px-md-5">
+                <form (ngSubmit)="sendEmail()" #contactForm="ngForm" class="gift-form">
+                  <input [(ngModel)]="formData.name" class="form" type="text" name="name" placeholder="Name" required />
+                  <input [(ngModel)]="formData.email" class="form" type="email" name="email" placeholder="Email" required />
+                  <input [(ngModel)]="formData.priceRange" class="form" type="text" name="price" placeholder="Price range" required />
+                  <input [(ngModel)]="formData.quantity" class="form" type="text" name="quantity" placeholder="Quantity" required />
+                  <textarea [(ngModel)]="formData.message" class="form" name="message" placeholder="What are you looking for?" required></textarea>
+                  
+                  <div class="form-check my-2">
+                    <input [(ngModel)]="formData.options" class="form-check-input" type="checkbox" id="subscribeOptions" name="options" />
+                    <label class="form-check-label" for="subscribeOptions">Send me options in my price range</label>
+                  </div>
+                  
+                  <button class="button w-100" style="color: #858282; font-weight: 800; font-size: 20px;" type="submit">Submit</button>
+                </form>
+              </div> -->
+              
             </div>
           </div>
           <div class="col-md-3"><div class="card card1 d-none d-md-flex "   >
-            <img style="height: 180px; margin-top: 40px;" class=" " src="" alt=""> 
+            <img style="height: 175px; margin-top: 60px;" class=" " src="\tech-card.png" alt=""> 
             <div style="text-align: center; color: #01b4ba; margin-top: 35px; line-height: 0.7;"> <h3>Tech</h3> 
               <!-- <p>1053 more options to choose and customize!</p> -->
             </div> 
           </div></div>
           <div class="col-md-3"><div class="card card2 d-none d-md-flex"  >
-            <img style="height: 300px; margin-top: -20px; margin-right: -12px;" class=" " src="\mugs-removebg-preview.png" alt=""> 
+            <img style="height: 300px; margin-top: -20px; " class=" " src="\mugs-removebg-preview.png" alt=""> 
             <div style="text-align: center; color: #fdd500; margin-top: -30px; line-height: 0.7;"> <h3>Drinkware</h3> 
               <!-- <p>Infinite shapes and colours to make your own!</p> -->
             </div> 
@@ -155,9 +190,10 @@
       <img
         class="carousel-item-image"
         style="
-          height: 750px;
+          height: 100%;
+          object-fit: cover;
           position: absolute;
-          opacity: 0.5;
+          opacity:1;
           top: 0;
           left: 0;
           width: 100%;
@@ -165,16 +201,7 @@
         src="/DALL·E 2025-01-06 13.51.39 - A modern promotional product layout featuring a neutral color palette with beige, white, and soft gray. The composition includes items such as a sleek.webp"
         class="d-block w-100"
       />
-      <div class="container pt-5 title-content">
-        <div class="row">
-          <h1 class="col-md-4 col-lg-3 col-sm-2 px-5 pt-3 title">Louis</h1>
-        </div>
-        <div class="row pt-2">
-          <div class="col-md-12 col-lg-7 col-sm-12 px-5 tagline">
-            <h2>The art of corporate gifting, <b> Redefined!</b></h2>
-          </div>
-        </div>
-      </div>
+      
     </div>
     <!-- <div class="carousel-item active" style="height: 750px; position: relative;">
         <img
@@ -197,18 +224,21 @@
 
     <div class="carousel-item" style="position: relative; height: 75vh">
       <img
-        class="carousel-item-image"
-        style="height: 750px; min-height: 300px"
-        src="https://th.bing.com/th/id/OIP.geEspcN8sonuAmPHaDzCvAHaEo?w=296&h=185&c=7&r=0&o=5&dpr=2.5&pid=1.7"
-        class="d-block w-100"
+        
+        class="img-fluid img-fluid w-100"
+        style="height: 100%; max-height: 75vh; object-fit: cover;"
+
+        src="\carousel-item-image2.png"
+        
       />
     </div>
     <div class="carousel-item" style="position: relative; height: 75vh">
       <img
         class="carousel-item-image"
-        style="height: 750px; min-height: 300px"
-        src="https://i.pinimg.com/736x/87/4f/5a/874f5a33929c3998f4826e8dd8ba8d97.jpg"
-        class="d-block w-100"
+        class="img-fluid w-100"
+        style="height: 100%; max-height: 75vh; object-fit: cover;"
+        src="eco-carousel-image3.png"
+        
       />
       <div style="border-radius: 50%; color: #006400;" >
 
@@ -220,12 +250,12 @@
 
   <button
     class="carousel-control-prev"
-    style="opacity: 0.7; margin-left: 8vh; width: auto;"
+    style="opacity: 0.7; width: auto;"
     type="button"
     data-bs-target="#carouselExampleIndicators"
     data-bs-slide="prev"
   >
-    <span class="carousel-button" aria-hidden="true">
+    <!-- <span class="carousel-button" aria-hidden="true">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
@@ -236,19 +266,19 @@
       >
         <path
           d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
-        /></svg></span>
-
+        /></svg></span> -->
+        <span class="carousel-control-prev-icon"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button
     class="carousel-control-next"
-    style="opacity: 0.7; margin-right: 8vh; width: auto;"
+    style="opacity: 0.7;  width: auto;"
     type="button"
     data-bs-target="#carouselExampleIndicators"
     data-bs-slide="next"
   >
     <div></div>
-    <span class="carousel-button" aria-hidden="true"
+    <!-- <span class="carousel-button" aria-hidden="true"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
@@ -259,7 +289,8 @@
       >
         <path
           d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-        /></svg></span>
+        /></svg></span> -->
+    <span class="carousel-control-next-icon"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>

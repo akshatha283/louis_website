@@ -18,6 +18,16 @@
    
 }
 
+.footer-background{
+    height: 20vh; background-color: #3768d0; padding-top: 20px;
+}
+
+@media (max-width: 576px) {
+    .footer-background{
+        height: 60vh; background-color: #3768d0; padding-top: 20px;
+    }
+}
+
 i{
   color: white;
   padding: 0 5px;

@@ -1,21 +1,47 @@
-<div class="title">Trusted by 100s of Companies!</div>
+<!-- <div class="title">Trusted by 100s of Companies!</div>
 <div class="wrapper">
-  <div  ><img class="img img1" src="\cisco-2-logo-black-and-white.png" alt=""/></div>
-  <div ><img class="img img2" src="\black-amazon-logo-removebg.png" alt=""/></div>
-  <div ><img class="img img3" src="\cisco-2-logo-black-and-white.png" alt=""/></div>
-  <div ><img class="img img4" src="\black-amazon-logo-removebg.png" alt=""/></div>
-  <div ><img class="img img5" src="\cisco-2-logo-black-and-white.png" alt=""/></div>
-  <div ><img class="img img6" src="\black-amazon-logo-removebg.png" alt=""/></div>
-  <div ><img class="img img7" src="\cisco-2-logo-black-and-white.png" alt=""/></div>
-  <div ><img class="img img8" src="\black-amazon-logo-removebg.png" alt=""/></div>
-  
-  
-  
-  
-  
-  
-  
+  <div class="scroll-track" ><img class="company-logo img1" src="\cisco-2-logo-black-and-white.png" alt=""/></div>
+  <div class="scroll-track" ><img class="company-logo img2" src="\black-amazon-logo-removebg.png" alt=""/></div>
+  <div class="scroll-track" ><img class="company-logo img3" src="\cisco-2-logo-black-and-white.png" alt=""/></div>
+  <div class="scroll-track" ><img class="company-logo img4" src="\black-amazon-logo-removebg.png" alt=""/></div>
+  <div class="scroll-track" ><img class="company-logo img5" src="\cisco-2-logo-black-and-white.png" alt=""/></div>
+  <div class="scroll-track" ><img class="company-logo img6" src="\black-amazon-logo-removebg.png" alt=""/></div>
+  <div class="scroll-track" ><img class="company-logo img7" src="\cisco-2-logo-black-and-white.png" alt=""/></div>
+  <div class="scroll-track" ><img class="company-logo img8" src="\black-amazon-logo-removebg.png" alt=""/></div>
+
+</div> -->
+
+<div class="title">Trusted by 100s of Companies!</div>
+
+<div class="logo-slider-wrapper">
+  <div class="logo-slider-track">
+    <ng-container *ngFor="let _ of [0, 1]"> <!-- Duplicate entire set -->
+      <img
+        *ngFor="let image of images"
+        [src]="image"
+        class="company-logo"
+        alt="Company logo"
+      />
+    </ng-container>
+  </div>
 </div>
+
+
+<!-- <div class="title">Trusted by 100s of Companies!</div>
+
+<div class="wrapper">
+  <div class="scroll-track">
+    <ng-container *ngFor="let _ of [0, 1]"> 
+      <img
+        *ngFor="let image of images"
+        [src]="'assets' + image"
+        class="company-logo"
+        alt="Company logo"
+      />
+    </ng-container>
+  </div>
+</div> -->
+
 
 <!-- <div class="image-container">
  

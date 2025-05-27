@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { BackendService } from '../../services/backend.service';
 
 @Component({
   selector: 'app-carousel',
@@ -8,7 +9,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnInit {
   formData = {
     name: '',
     email: '',
@@ -17,6 +18,23 @@ export class CarouselComponent {
     message: '',
     options:''
   };
+
+  constructor( private backend : BackendService){}
+
+  ngOnInit(): void {
+    
+  }
+
+  submitForm(): void {
+     this.backend.submitForm(this.formData).subscribe({
+      next:(response) => {
+        console.log('form submitted:' + response)
+      },
+      error:(error)=>{
+        console.log("Error form submission", error);
+      }
+     })
+  }
 
   sendEmail(): void {
     const templateParams = {
