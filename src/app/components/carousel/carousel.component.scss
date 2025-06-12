@@ -1,12 +1,4 @@
-// .left-bg {		
-//   position: absolute;		   
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 50%;
-//   background-color: #fdd500;
-//   z-index: 0;
-// }
+
 
 .carousel-item-image {
   // height: 450px;
@@ -24,21 +16,6 @@
   border-radius: 50%;
 }
 
-// .form{
-//     border: none;
-//     background-color:  rgb(255, 255, 255,0.5) ;
-//     // color:#fdd500 ;
-//     color: #858282;
-//     // font-weight: 700;
-//     margin: 10px 5px;
-//     padding: 5px 10px;
-// }
-
-// .gift-form {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 12px;
-// }
 
 .gift-form {
   width: 100%;
@@ -75,30 +52,34 @@ textarea.form {
     font-size: 18px;
     color: #01b4ba;
   }
+  // .background-circle {
+  //   top: -10vh; /* further adjustment for phones */
+  //   width: 120vw;
+  //   height: 120vw;
+  //   left: 50%;
+  // }
 }
 
 
+
 // @media (max-width: 768px) {
-//   .left-bg {
-//     width: 100%;
-//     height: 200px;
+//   .background-circle {
+//     top: -20vh; /* bring it down on tablets */
+//     width: 100vw;
+//     height: 100vw;
 //   }
-
-//   .carousel-item {
-//     flex-direction: column;
-//     height: auto;
-//   }
- 
-
-//   .tagline h2 {
-//     font-size: 1.2rem;
-//   }
-
-//   .title {
-//     font-size: 2.5rem;
-//   }					
-							   
 // }
+
+
+
+// @media (max-width: 350px) {
+//   .background-circle {
+//     top: -5vh;
+//     width: 130vw;
+//     height: 130vw;
+//   }
+// }
+
 
 
 .bag-outer-bubble {
@@ -166,31 +147,40 @@ textarea.form {
   top: 60%;
 }
 
+
 .background-circle {
   position: absolute;
-  top: -40vh;
-  left: 5%;
-  transform: translateX(-50%);
-  width: 90vw;
-  height: 80vw;
+  top: -81vh; /* Slightly above the top edge */
+  left: -73vw; /* Shift it leftwards for a half-visible effect */
+  width: 120vw;
+  height: 120vw;
   background-color: #fdd500;
   border-radius: 50%;
   z-index: 0;
 }
 
 
-// .card{
-//     background-color: rgb(255, 255, 255, 0.5);
-//     border-radius: 50%/30%;
-//     height: 350px;
-//     width: 220px;
-//     // position: absolute;
-//     z-index: 1;
-//     left: 35%;
-//     border: none;
-//     // top: 20%;
-//     // box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
-// }
+
+@media (max-width: 768px) {
+  .background-circle {
+    top: -23vh;
+    left: -92vw;
+    width: 150vw;
+    height: 150vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-circle {
+    top: 0;
+    left: -92vw;
+    width: 180vw;
+    height: 180vw;
+  }
+}
+
+
+
 
 .card{
   background-color: rgb(255, 255, 255, 0.5);
@@ -209,18 +199,7 @@ textarea.form {
   left: 35%;
 }
 
-// .card2{
-//   background-color: rgb(255, 255, 255, 0.5);
-//   border-radius: 50%/30%;
-//   height: 350px;
-//   width: 220px;
-//   // position: absolute;
-//   z-index: 1;
-//   left: 35%;
-//   border: none;
-//   // top: 20%;
-//   // box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); 
-// }
+
 
 @media only screen and (max-width: 300px) {
     .card {
@@ -240,21 +219,6 @@ textarea.form {
   background-color: #01b4ba;
   // background-color: #f4c2c2;
 }
-// @media (max-width: 768px) {
-//   .carousel-item img {
-//     object-fit: contain;
-//     max-height: 50vh;
-//   }
-// }
-
-
-// .carousel-item {
-//   background-color: #01b4ba;
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   padding: 2rem 1rem;
-// }
 
 .title {
   font-family: DejaVu Sans;
